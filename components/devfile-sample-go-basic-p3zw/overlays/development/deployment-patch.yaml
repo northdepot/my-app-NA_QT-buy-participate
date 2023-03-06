@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-p3zw
+  namespace: user1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/user-workload@sha256:28ae16f169571305a9068abaded8fcc99ca7657055e6d9902ada059c83fdd534
+        name: my-go
+        resources: {}
+status: {}
